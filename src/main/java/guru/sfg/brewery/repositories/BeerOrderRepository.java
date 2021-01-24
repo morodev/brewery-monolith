@@ -31,7 +31,8 @@ import java.util.UUID;
 
 /**
  * Created by Luca Moro on 24/02/2021.
- */ic interface BeerOrderRepository  extends JpaRepository<BeerOrder, UUID> {
+ */
+public interface BeerOrderRepository  extends JpaRepository<BeerOrder, UUID> {
 
     Page<BeerOrder> findAllByCustomer(Customer customer, Pageable pageable);
 
